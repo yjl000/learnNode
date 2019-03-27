@@ -54,7 +54,7 @@ export default new Router({
           path: 'studyNote',
           name: 'studyNote',
           component: () => import(/* webpackChunkName: "about" */ './components/studyNote/studyNote.vue')
-        },
+        }
       ]
     }
   ]

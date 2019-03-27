@@ -5,9 +5,9 @@
 </template>
 
 <script>
-  export default {
-    name: "nbBolg"
-  }
+export default {
+  name: 'nbBolg'
+}
 </script>
 
 <style scoped>

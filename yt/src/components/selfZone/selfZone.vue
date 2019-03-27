@@ -5,9 +5,9 @@
 </template>
 
 <script>
-  export default {
-    name: "selfZone"
-  }
+export default {
+  name: 'selfZone'
+}
 </script>
 
 <style scoped>

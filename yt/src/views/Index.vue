@@ -33,32 +33,32 @@ export default {
         {
           id: 0,
           url: '/index/home',
-          text: '首页',
+          text: '首页'
         },
         {
           id: 1,
           url: '/index/nbBolg',
-          text: '名人博客',
+          text: '名人博客'
         },
         {
           id: 2,
           url: '/index/studyWeb',
-          text: '学习网站',
+          text: '学习网站'
         },
         {
           id: 3,
           url: '/index/studyNote',
-          text: '学习笔记',
+          text: '学习笔记'
         },
         {
           id: 4,
           url: '/index/selfZone',
-          text: '个人空间',
+          text: '个人空间'
         },
         {
           id: 5,
           url: '/index/happyDay',
-          text: '开心一刻',
+          text: '开心一刻'
         }
       ]
     }
@@ -71,7 +71,7 @@ export default {
       // 下面这句代码是获取 点击的区域是否包含你的菜单，如果包含，说明点击的是菜单以外，不包含则为菜单以内
       let flag = e.target.contains(document.getElementById('meauList'))
       console.log(flag)
-      if(!flag) return
+      if (!flag) return
       _that.showMeauList = false
     })
   }
