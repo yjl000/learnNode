@@ -28,7 +28,7 @@ router.post('/userLogin', function (req, res) {
   var params = req.body;
   let userError = {
     status: '404', // 404 用户名不存在；200 登录成功； -1 密码错误
-    message: '用户名不存在'
+    message: '用户名不存在！'
   };
   conn.query(sql, [params.userName], function(err, result) {
     if (err) {
@@ -40,10 +40,14 @@ router.post('/userLogin', function (req, res) {
         if (result[i].password == params.password) {
           userError.status = '200';
           userError.message = 'success';
+          userError.data = {
+            name: params.userName,
+            userID: result[i].userID
+          }
           return res.send(JSON.stringify(userError));
         } else {
           userError.status = '-1';
-          userError.message = 'error';
+          userError.message = '用户名或密码错误！';
           return res.send(JSON.stringify(userError));
         }
       }

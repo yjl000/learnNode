@@ -1,0 +1,116 @@
+@windowWidth: 375;
+@left: ~`Math.round(Math.random() * @{windowWidth})`;
+@animated: ~`(-Math.random() * 4 + 12).toFixed(2)`;
+@delay: ~`(-Math.random() * 8 + 0.2).toFixed(2)`;
+@scale: ~`(Math.random() * 0.7 + 0.5).toFixed(2)`;
+@tranY: ~`Math.round(Math.random() * 200 + 1600)`;
+// 花
+.flower{
+  &_wrap{
+    position: relative;
+    width: ~"@{windowWidth}px";
+    height: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+
+  // 花瓣初始大小
+  position: absolute;
+  width: 3.2rem;
+  height: 3.2rem;
+  &:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 3.2rem;
+    height: 3.2rem;
+    opacity: 1;
+    background: url("../assets/home/flower.png") no-repeat center center;
+  }
+}
+
+// 产生随机位置的花
+.flower(@n) when (@n > 0) {
+  .flower_@{n}{
+    // 水平方向上的位移
+    left: ~"@{left}px";
+    animation: ~"flowerani_@{n} @{animated}s linear infinite";
+    animation-delay: ~"@{delay}s";
+    &:after{
+      transform: ~"scale(@{scale})";
+    }
+  }
+
+  @frameName: ~"flowerani_@{n}";
+  @keyframes @frameName {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: ~"translateY(@{tranY}px)";
+    }
+  }
+  .flower((@n - 1))
+}
+.flower(90);
+
+.home{
+  height: 100%;
+}
+.swiper-box {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+.swiper-item {
+  position: relative;
+  height: 100%;
+  text-align: center;
+  font-size: 18px ;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.slide1_img1{
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  animation-delay: 2s;
+  animation-duration: 1s;
+  & > img{
+    transform: rotate(25deg);
+  }
+}
+.slide1_img2{
+  position: absolute;
+  right: 10%;
+  top: 10%;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  & > img{
+    transform: rotate(-25deg);
+  }
+}
+.slide1_img3{
+  position: absolute;
+  left: 36%;
+  bottom: 16%;
+  animation-delay: 0s;
+  animation-duration: 1s;
+  & > img{
+    transform: rotate(-25deg);
+  }
+}

@@ -1,0 +1,1520 @@
+.flower {
+  position: absolute;
+  width: 3.2rem;
+  height: 3.2rem;
+}
+.flower_wrap {
+  position: relative;
+  width: 375px;
+  height: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.flower:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 3.2rem;
+  height: 3.2rem;
+  opacity: 1;
+  background: url("../assets/home/flower.png") no-repeat center center;
+}
+.flower_90 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_90 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_90:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_90 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_89 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_89 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_89:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_89 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_88 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_88 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_88:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_88 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_87 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_87 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_87:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_87 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_86 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_86 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_86:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_86 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_85 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_85 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_85:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_85 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_84 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_84 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_84:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_84 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_83 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_83 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_83:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_83 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_82 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_82 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_82:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_82 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_81 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_81 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_81:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_81 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_80 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_80 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_80:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_80 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_79 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_79 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_79:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_79 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_78 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_78 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_78:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_78 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_77 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_77 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_77:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_77 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_76 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_76 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_76:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_76 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_75 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_75 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_75:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_75 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_74 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_74 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_74:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_74 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_73 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_73 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_73:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_73 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_72 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_72 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_72:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_72 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_71 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_71 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_71:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_71 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_70 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_70 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_70:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_70 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_69 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_69 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_69:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_69 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_68 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_68 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_68:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_68 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_67 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_67 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_67:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_67 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_66 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_66 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_66:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_66 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_65 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_65 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_65:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_65 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_64 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_64 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_64:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_64 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_63 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_63 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_63:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_63 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_62 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_62 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_62:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_62 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_61 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_61 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_61:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_61 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_60 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_60 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_60:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_60 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_59 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_59 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_59:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_59 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_58 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_58 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_58:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_58 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_57 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_57 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_57:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_57 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_56 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_56 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_56:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_56 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_55 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_55 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_55:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_55 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_54 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_54 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_54:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_54 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_53 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_53 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_53:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_53 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_52 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_52 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_52:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_52 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_51 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_51 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_51:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_51 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_50 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_50 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_50:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_50 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_49 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_49 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_49:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_49 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_48 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_48 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_48:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_48 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_47 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_47 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_47:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_47 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_46 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_46 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_46:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_46 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_45 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_45 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_45:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_45 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_44 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_44 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_44:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_44 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_43 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_43 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_43:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_43 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_42 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_42 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_42:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_42 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_41 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_41 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_41:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_41 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_40 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_40 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_40:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_40 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_39 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_39 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_39:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_39 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_38 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_38 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_38:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_38 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_37 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_37 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_37:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_37 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_36 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_36 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_36:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_36 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_35 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_35 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_35:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_35 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_34 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_34 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_34:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_34 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_33 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_33 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_33:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_33 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_32 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_32 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_32:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_32 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_31 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_31 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_31:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_31 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_30 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_30 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_30:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_30 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_29 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_29 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_29:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_29 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_28 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_28 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_28:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_28 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_27 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_27 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_27:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_27 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_26 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_26 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_26:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_26 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_25 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_25 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_25:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_25 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_24 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_24 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_24:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_24 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_23 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_23 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_23:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_23 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_22 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_22 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_22:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_22 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_21 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_21 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_21:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_21 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_20 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_20 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_20:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_20 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_19 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_19 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_19:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_19 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_18 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_18 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_18:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_18 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_17 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_17 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_17:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_17 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_16 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_16 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_16:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_16 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_15 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_15 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_15:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_15 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_14 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_14 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_14:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_14 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_13 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_13 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_13:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_13 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_12 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_12 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_12:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_12 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_11 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_11 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_11:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_11 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_10 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_10 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_10:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_10 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_9 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_9 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_9:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_9 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_8 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_8 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_8:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_8 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_7 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_7 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_7:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_7 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_6 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_6 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_6:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_6 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_5 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_5 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_5:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_5 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_4 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_4 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_4:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_4 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_3 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_3 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_3:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_3 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_2 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_2 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_2:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_2 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.flower_1 {
+  left: Math.round(Math.random()) * 375;
+  animation: flowerani_1 (-Math.random() * 4 + 8).toFixed(2)s linear infinite;
+  animation-delay: (-Math.random() * 8 + 0.2).toFixed(2)s;
+}
+.flower_1:after {
+  transform: scale(Math.random() * 0.7 + 0.5.toFixed(2));
+}
+@keyframes flowerani_1 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(Math.round(Math.random() * 200 + 1600)px);
+  }
+}
+.home {
+  height: 100%;
+}
+.swiper-box {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+.swiper-item {
+  position: relative;
+  height: 100%;
+  text-align: center;
+  font-size: 18px ;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.slide1_img1 {
+  position: absolute;
+  left: 10%;
+  top: 20%;
+  animation-delay: 0s;
+  animation-duration: 1s;
+}
+.slide1_img1 > img {
+  transform: rotate(25deg);
+}
+.slide1_img2 {
+  position: absolute;
+  right: 10%;
+  top: 20%;
+  animation-delay: 1s;
+  animation-duration: 1s;
+}
+.slide1_img2 > img {
+  transform: rotate(-25deg);
+}
+.slide1_img3 {
+  position: absolute;
+  bottom: 20%;
+  animation-delay: 2s;
+  animation-duration: 1s;
+}
+.slide1_img3 > img {
+  transform: rotate(-25deg);
+}
+/*# sourceMappingURL=home.css.map */

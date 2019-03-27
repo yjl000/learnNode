@@ -7,7 +7,7 @@ module.exports = {
   // 指定子路径。比如，如果你的应用部署在
   // https://www.foobar.com/my-app/
   // 那么将这个值改为 `/my-app/`
-  baseUrl: '/icc/',
+  publicPath: '/',
 
   // 将构建好的文件输出到哪里
   outputDir: process.env.outputDir,
@@ -50,7 +50,11 @@ module.exports = {
 
     // 为预处理器的 loader 传递自定义选项。比如传递给
     // sass-loader 时，使用 `{ sass: { ... } }`。
-    loaderOptions: {},
+    loaderOptions: {
+      less: {
+        javascriptEnabled: true
+      }
+    },
 
     // 为所有的 CSS 及其预处理文件开启 CSS Modules。
     // 这个选项不会影响 `*.vue` 文件。
@@ -69,18 +73,18 @@ module.exports = {
   devServer: {
     open: process.platform === 'darwin',
     host: '0.0.0.0',
-    port: 8088,
+    port: 8099,
     https: false,
     hotOnly: true,
     // 查阅 https://github.com/vuejs/vue-docs-zh-cn/blob/master/vue-cli/cli-service.md#配置代理
     proxy: {
-      '/BPM': {
-        target: 'http://pro-wf.youdeyi.com',
+      '/api': {
+        target: 'http://127.0.0.1:9000/api/',
         // ws: true,
         changeOrigin: true,
-        // pathRewrite: {
-        //   '^/api': ''//这里理解成用‘/api’代替target里面的地址，后面组件中我们掉接口时直接用api代替 比如我要调用'http://40.00.100.100:3002/user/add'，直接写‘/api/user/add’即可
-        // }
+        pathRewrite: {
+          '^/api': ''//这里理解成用‘/api’代替target里面的地址，后面组件中我们掉接口时直接用api代替 比如我要调用'http://40.00.100.100:3002/user/add'，直接写‘/api/user/add’即可
+        }
       }
     }, // string | Object
     before: app => {
