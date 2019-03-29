@@ -112,6 +112,14 @@ export default {
         }
       }
     }
+    & > .userInfo{
+      display: flex;
+      align-items: center;
+      & > span{
+        display: inline-block;
+        margin-right: .5rem;
+      }
+    }
   }
   & > section{
     flex: 1;
