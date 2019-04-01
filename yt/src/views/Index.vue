@@ -13,12 +13,23 @@
         </div>
         <div class="userInfo">
           <span style="color: #fff">{{userName}}</span>
-          <img src="../assets/home/vatar.png" alt="">
+          <img src="../assets/home/vatar.png" alt="" @click="showExit = true">
+          <div class="exit" v-show="showExit" @click="exit">
+            退出账号
+          </div>
         </div>
       </header>
       <section>
         <router-view/>
       </section>
+      <Modal
+        v-model="modal"
+        title="提示"
+        @on-ok="ok"
+        @on-cancel="cancel"
+      >
+        <p>确定退出当前账号吗？</p>
+      </Modal>
     </div>
 </template>
 
@@ -28,6 +39,8 @@ export default {
   data () {
     return {
       showMeauList: false,
+      modal: false,
+      showExit: false,
       userName: 'user',
       meauList: [
         {
@@ -64,16 +77,29 @@ export default {
     }
   },
   mounted () {
-    console.log(JSON.parse(sessionStorage.getItem('loginInfo')).data.name)
     this.userName = JSON.parse(sessionStorage.getItem('loginInfo')).data.name
     let _that = this
     document.addEventListener('click', function (e) {
       // 下面这句代码是获取 点击的区域是否包含你的菜单，如果包含，说明点击的是菜单以外，不包含则为菜单以内
       let flag = e.target.contains(document.getElementById('meauList'))
-      console.log(flag)
       if (!flag) return
       _that.showMeauList = false
+
+      let flag2 = e.target.contains(document.getElementsByClassName('exit')[0])
+      if (!flag2) return
+      _that.showExit = false
     })
+  },
+  methods: {
+    exit () {
+      this.modal = true
+    },
+     ok () {
+       this.$router.replace('/login')
+     },
+    cancel () {
+      this.showExit = false
+    }
   }
 }
 </script>
@@ -115,10 +141,24 @@ export default {
     & > .userInfo{
       display: flex;
       align-items: center;
+      position: relative;
       & > span{
         display: inline-block;
         margin-right: .5rem;
       }
+      & > .exit{
+        position: absolute;
+        left: 0;
+        top: 2.6rem;
+        border: 1px solid #eeeeee;
+        border-radius: .5rem;
+        background: #2c3e50;
+        color: #ecf0f1;
+        padding: .8rem;
+        width: 6rem;
+        z-index: 9;
+      }
+
     }
   }
   & > section{

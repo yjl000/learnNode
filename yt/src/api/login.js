@@ -8,3 +8,12 @@ export function login (data = {}) {
     data: query
   })
 }
+
+export function regin (data = {}) {
+  let query = data
+  return request({
+    url: '/addUser',
+    method: 'post',
+    data: query
+  })
+}

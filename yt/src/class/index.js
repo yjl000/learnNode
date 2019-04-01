@@ -1,21 +1,12 @@
 export let canvasOption = {
   love: {
-    length: 5, // 爱心最大数量
+    length: 500, // 爱心最大数量
     duration: 2, // 爱心持续时间
     velocity: 100, // 速率
     effect: -0.75,
     size: 30 // 爱心大小
   }
 }
-var settings = {
-  particles: {
-    length: 500, // maximum amount of particles
-    duration: 2, // particle duration in sec
-    velocity: 100, // particle velocity in pixels/sec
-    effect: -0.75, // play with this for a nice effect
-    size: 30, // particle size in pixels
-  },
-};
 
 export class Point {
   constructor (x, y) {
@@ -45,7 +36,7 @@ export class Point {
   }
 }
 
-export function Love() {
+export function Love () {
   class LoveT {
     constructor () {
       this.position = new Point()
@@ -84,11 +75,11 @@ export function Love() {
   return LoveT
 }
 
-export function ParticlePool() {
+export function ParticlePool () {
   let particles
   let firstActive = 0
   let firstFree = 0
-  let duration = settings.particles.duration
+  let duration = canvasOption.love.duration
   let Loveq = new Love()
   class Pool {
     constructor (length) {
@@ -148,6 +139,5 @@ export function ParticlePool() {
       }
     }
   }
-  return Pool;
+  return Pool
 }
-

@@ -62,6 +62,7 @@ router.post('/addUser', (req, res) => {
   var sql = $sql.user.add;
   var search = $sql.user.search;
   var params = req.body;
+  params.userID = Math.floor(Math.random () * 900) + 100;
   let addError = {
     status: '200', // 200 注册成功； -200 用户已存在
     message: '注册成功'
@@ -75,7 +76,7 @@ router.post('/addUser', (req, res) => {
       addError.message = '用户名已存在！';
       return res.send(JSON.stringify(addError));
     } else {
-      conn.query(sql, [params.userName,params.password], function(err, result) {
+      conn.query(sql, [params.userName,params.password, params.userID], function(err, result) {
         if (err) {
           console.log(err);
         }
