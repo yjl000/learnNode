@@ -30,9 +30,9 @@
 
 <script>
 // @ is an alias to /src
-// import HelloWorld from '@/components/HelloWorld.vue'
+
 import { swiper, swiperSlide } from 'vue-awesome-swiper'
-import { Pool, Point, Love, canvasOption } from '../class'
+import { ParticlePool, Point, Love, canvasOption } from '../class'
 
 export default {
   name: 'home',
@@ -60,7 +60,7 @@ export default {
   mounted () {
     this.updateAnimate()
     this.createPoint()
-    let Loveq = new Love()
+    let pool = new ParticlePool()
     // this.createPool()
     // let c = document.getElementById('love')
     // this.createCanvas(c)
@@ -77,78 +77,12 @@ export default {
       },
     };
 
-
-    /*
-     * ParticlePool class
-     */
-    var ParticlePool = (function () {
-      var particles,
-        firstActive = 0,
-        firstFree = 0,
-        duration = settings.particles.duration;
-
-      function ParticlePool(length) {
-        // create and populate particle pool
-        particles = new Array(length);
-        for (var i = 0; i < particles.length; i++)
-          particles[i] = new Loveq()
-      }
-
-      ParticlePool.prototype.add = function (x, y, dx, dy) {
-        particles[firstFree].initialize(x, y, dx, dy);
-
-        // handle circular queue
-        firstFree++;
-        if (firstFree == particles.length) firstFree = 0;
-        if (firstActive == firstFree) firstActive++;
-        if (firstActive == particles.length) firstActive = 0;
-      };
-      ParticlePool.prototype.update = function (deltaTime) {
-        var i;
-
-        // update active particles
-        if (firstActive < firstFree) {
-          for (i = firstActive; i < firstFree; i++)
-            particles[i].update(deltaTime);
-        }
-        if (firstFree < firstActive) {
-          for (i = firstActive; i < particles.length; i++)
-            particles[i].update(deltaTime);
-          for (i = 0; i < firstFree; i++)
-            particles[i].update(deltaTime);
-        }
-
-        // remove inactive particles
-        while (particles[firstActive].age >= duration && firstActive != firstFree) {
-          firstActive++;
-          if (firstActive == particles.length) firstActive = 0;
-        }
-
-
-      };
-      ParticlePool.prototype.draw = function (context, image) {
-        // draw active particles
-        var i
-        if (firstActive < firstFree) {
-          for (i = firstActive; i < firstFree; i++)
-            particles[i].draw(context, image);
-        }
-        if (firstFree < firstActive) {
-          for (i = firstActive; i < particles.length; i++)
-            particles[i].draw(context, image);
-          for (i = 0; i < firstFree; i++)
-            particles[i].draw(context, image);
-        }
-      };
-      return ParticlePool;
-    })();
-
     /*
      * Putting it all together
      */
     (function (canvas) {
       var context = canvas.getContext('2d'),
-        particles = new ParticlePool(settings.particles.length),
+        particles = new pool(settings.particles.length),
         particleRate = settings.particles.length / settings.particles.duration, // particles/sec
         time;
 

@@ -45,69 +45,6 @@ export class Point {
   }
 }
 
-export class Pool {
-  constructor (length) {
-    this.particles = new Array(length)
-    this.firstActive = 0
-    this.firstFree = 0
-    this.duration = canvasOption.love.duration
-    for (let i = 0; i < this.particles.length; i++) {
-      this.particles[i] = new Love()
-    }
-  }
-
-  add (x, y, dx, dy) {
-    this.particles[this.firstFree].initialize(x, y, dx, dy)
-    this.firstFree++
-    if (this.firstFree === this.particles.length) {
-      this.firstFree = 0
-    }
-    if (this.firstActive === this.firstFree) this.firstActive++
-    if (this.firstActive === this.particles.length) this.firstActive = 0
-  }
-
-  update (deltaTime) {
-    let i
-    if (this.firstActive < this.firstFree) {
-      for (i = this.firstActive; i < this.firstFree; i++) {
-        this.particles[i].update(deltaTime)
-      }
-    }
-    if (this.firstFree < this.firstActive) {
-      for (i = this.firstActive; i < this.particles.length; i++) {
-        this.particles[i].update(deltaTime)
-      }
-      for (i = 0; i < this.firstFree; i++) {
-        this.particles[i].update(deltaTime)
-      }
-    }
-
-    // 移除无效的爱心
-    while (this.particles[this.firstActive].age >= this.duration && this.firstActive !== this.firstFree) {
-      this.firstActive++
-      if (this.firstActive === this.particles.length) this.firstActive = 0
-    }
-  }
-
-  draw (context, image) {
-    let i
-    if (this.firstActive < this.firstFree) {
-      for (i = this.firstActive; i < this.firstFree; i++) {
-        this.particles[i].draw(context, image)
-      }
-    }
-    if (this.firstFree < this.firstActive) {
-      for (i = this.firstActive; i < this.particles.length; i++) {
-        this.particles[i].draw(context, image)
-      }
-      for (i = 0; i < this.firstFree; i++) {
-        this.particles[i].draw(context, image)
-      }
-    }
-  }
-}
-
-
 export function Love() {
   class LoveT {
     constructor () {
@@ -145,5 +82,72 @@ export function Love() {
     }
   }
   return LoveT
+}
+
+export function ParticlePool() {
+  let particles
+  let firstActive = 0
+  let firstFree = 0
+  let duration = settings.particles.duration
+  let Loveq = new Love()
+  class Pool {
+    constructor (length) {
+      particles = new Array(length)
+      for (let i = 0; i < particles.length; i++) {
+        particles[i] = new Loveq()
+      }
+    }
+
+    add (x, y, dx, dy) {
+      particles[firstFree].initialize(x, y, dx, dy)
+      firstFree++
+      if (firstFree === particles.length) {
+        firstFree = 0
+      }
+      if (firstActive === firstFree) firstActive++
+      if (firstActive === particles.length) firstActive = 0
+    }
+
+    update (deltaTime) {
+      let i
+      if (firstActive < firstFree) {
+        for (i = firstActive; i < firstFree; i++) {
+          particles[i].update(deltaTime)
+        }
+      }
+      if (firstFree < firstActive) {
+        for (i = firstActive; i < particles.length; i++) {
+          particles[i].update(deltaTime)
+        }
+        for (i = 0; i < firstFree; i++) {
+          particles[i].update(deltaTime)
+        }
+      }
+
+      // 移除无效的爱心
+      while (particles[firstActive].age >= duration && firstActive !== firstFree) {
+        firstActive++
+        if (firstActive === particles.length) firstActive = 0
+      }
+    }
+
+    draw (context, image) {
+      let i
+      if (firstActive < firstFree) {
+        for (i = firstActive; i < firstFree; i++) {
+          particles[i].draw(context, image)
+        }
+      }
+      if (firstFree < firstActive) {
+        for (i = firstActive; i < particles.length; i++) {
+          particles[i].draw(context, image)
+        }
+        for (i = 0; i < firstFree; i++) {
+          particles[i].draw(context, image)
+        }
+      }
+    }
+  }
+  return Pool;
 }
 

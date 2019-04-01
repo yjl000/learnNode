@@ -4,7 +4,7 @@ const Qs = require('qs')
 const CancelToken = axios.CancelToken
 axios.defaults.headers.common['Content-Type'] = 'application/x-www-form-urlencoded'
 let BASE_API = '/api/user/'
-
+// let BASE_API = ''
 window.cancelToken && window.cancelToken() // 根据标记取消对应的请求
 // 创建axios实例
 const service = axios.create({
