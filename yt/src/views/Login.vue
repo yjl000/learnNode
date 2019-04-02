@@ -50,7 +50,7 @@ export default {
       },
       ruleInline: {
         userName: [
-          { required: true, message: 'Please fill in the user name', trigger: 'blur'}
+          { required: true, message: 'Please fill in the user name', trigger: 'blur' }
         ],
         password: [
           { required: true, message: 'Please fill in the password.', trigger: 'blur' },

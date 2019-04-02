@@ -94,9 +94,9 @@ export default {
     exit () {
       this.modal = true
     },
-     ok () {
-       this.$router.replace('/login')
-     },
+    ok () {
+      this.$router.replace('/login')
+    },
     cancel () {
       this.showExit = false
     }
