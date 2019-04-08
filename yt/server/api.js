@@ -4,10 +4,6 @@ var router = express.Router();
 var mysql = require('mysql');
 var $sql = require('./sqlfun');//sql语句
 
-// 连接数据库
-var conn = mysql.createConnection(models.mysql);
-
-conn.connect();
 
 
 var jsonWrite = function(res, ret) {
@@ -23,6 +19,9 @@ var jsonWrite = function(res, ret) {
 
 // 登录用户接口
 router.post('/userLogin', function (req, res) {
+// 连接数据库
+  var conn = mysql.createConnection(models.mysql);
+  conn.connect();
 
   var sql = $sql.user.login;
   var params = req.body;
@@ -54,11 +53,14 @@ router.post('/userLogin', function (req, res) {
       return res.end(JSON.stringify(userError));
     }
   })
-
+  conn.end()
 })
 
 // 增加用户接口
 router.post('/addUser', (req, res) => {
+  // 连接数据库
+  var conn = mysql.createConnection(models.mysql);
+  conn.connect();
   var sql = $sql.user.add;
   var search = $sql.user.search;
   var params = req.body;
@@ -88,6 +90,6 @@ router.post('/addUser', (req, res) => {
       })
     }
   })
-
+  conn.end()
 });
 module.exports = router;
