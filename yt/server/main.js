@@ -16,6 +16,7 @@ app.all('*', function(req, res, next) {
   res.header("Content-Type", "application/json;charset=utf-8");
   next();
 });
+// app.set('view engine','jade')
 // app.use(express.static('../dist'));
 //
 // app.get('/index.html', function (req, res) {
@@ -26,6 +27,7 @@ app.all('*', function(req, res, next) {
 app.use('/api/user', userApi);
 
 // 监听端口
-var server = app.listen(9000);
-server.setTimeout(0)
+app.listen(9000)
+// var server = app.listen(9000);
+// server.setTimeout(0)
 console.log('success listen at port:9000......');

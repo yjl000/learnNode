@@ -4,6 +4,7 @@ module.exports = {
     user: 'root',
     password: 'Ty@195810',
     database: 'serverbook',
-    port: '3306'
+    port: '3306',
+    useConnectionPooling: false
   }
 }
