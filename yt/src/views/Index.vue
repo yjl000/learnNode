@@ -19,7 +19,7 @@
           </div>
         </div>
       </header>
-      <section>
+      <section style="position: relative">
         <router-view/>
       </section>
       <Modal

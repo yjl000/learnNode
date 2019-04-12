@@ -1,0 +1,24 @@
+.addBtn {
+  margin: 1rem 0;
+}
+.noteList {
+  width: 100%;
+}
+.noteList > .webWrapper {
+  margin-bottom: 2rem;
+}
+.noteList > .webWrapper > .label {
+  display: flex;
+  padding: 0 1rem;
+  justify-iucontent: space-between;
+  line-height: 3rem;
+  background: #273c75;
+}
+.noteList > .webWrapper > .label > li {
+  color: #dcdde1;
+}
+.noteList > .webWrapper > .listContent {
+  padding: 0 1rem;
+  display: flex;
+}
+/*# sourceMappingURL=studyNote.css.map */

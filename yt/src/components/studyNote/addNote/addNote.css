@@ -1,0 +1,21 @@
+.addNote {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #fff;
+}
+.addNote > h3 {
+  margin-top: 1rem;
+}
+.addNote > .content > div {
+  width: 94%;
+  margin: 0 auto;
+  text-align: left;
+  margin-top: 2rem;
+}
+.addNote > .content > div.detail {
+  margin-bottom: 2rem;
+}
+/*# sourceMappingURL=addNote.css.map */

@@ -53,7 +53,19 @@ export default new Router({
         {
           path: 'studyNote',
           name: 'studyNote',
-          component: () => import(/* webpackChunkName: "about" */ './components/studyNote/studyNote.vue')
+          component: () => import(/* webpackChunkName: "about" */ './components/studyNote/studyNote.vue'),
+          children: [
+            {
+              path: 'noteDetail/:id',
+              name: 'noteDetail',
+              component: () => import(/* webpackChunkName: "about" */ './components/studyNote/noteDetail/noteDetail.vue')
+            },
+            {
+              path: 'addNote',
+              name: 'addNote',
+              component: () => import(/* webpackChunkName: "about" */ './components/studyNote/addNote/addNote.vue')
+            }
+          ]
         }
       ]
     }
