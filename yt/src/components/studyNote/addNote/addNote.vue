@@ -16,13 +16,14 @@
           <span>内容：</span>
           <vue-editor v-model="content"></vue-editor>
         </div>
-        <Button type="primary">提交</Button>
+        <Button type="primary" @click="submitData">提交</Button>
       </div>
     </div>
 </template>
 
 <script>
 import { VueEditor } from 'vue2-editor'
+import { addNote } from '@/api/addNote'
 export default {
   name: 'addNote',
   data () {
@@ -38,6 +39,30 @@ export default {
           value: '后端'
         }
       ]
+    }
+  },
+  methods: {
+    submitData () {
+      if (!this.labelValue) {
+        this.$Message.error('请选择标签!')
+        return false
+      }
+      if (!this.titleValue) {
+        this.$Message.error('请输入标题!')
+        return false
+      }
+      if (!this.content) {
+        this.$Message.error('请输入内容!')
+        return false
+      }
+      const params = {
+        label: this.labelValue,
+        title: this.titleValue,
+        content: this.content
+      }
+      addNote(params).then((res) => {
+        console.log(res)
+      })
     }
   },
   components: {
