@@ -14,9 +14,9 @@
         <div class="userInfo">
           <span style="color: #fff">{{userName}}</span>
           <img src="../assets/home/vatar.png" alt="" @click="showExit = true">
-          <div class="exit" v-show="showExit" @click="exit">
-            退出账号
-          </div>
+          <!--<div class="exit" v-show="showExit" @click="exit">-->
+            <!--退出账号-->
+          <!--</div>-->
         </div>
       </header>
       <section style="position: relative">
@@ -77,7 +77,7 @@ export default {
     }
   },
   mounted () {
-    this.userName = JSON.parse(sessionStorage.getItem('loginInfo')).data.name
+    // this.userName = JSON.parse(sessionStorage.getItem('loginInfo')).data.name
     let _that = this
     document.addEventListener('click', function (e) {
       // 下面这句代码是获取 点击的区域是否包含你的菜单，如果包含，说明点击的是菜单以外，不包含则为菜单以内

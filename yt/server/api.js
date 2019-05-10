@@ -145,4 +145,42 @@ router.post('/addNote', function (req, res) {
   })
 })
 
+// 大牛博客
+router.post('/blogList', function (req, res) {
+// 连接数据库
+  let sql = $sql.blogList.get
+  let userError = {
+    status: '404',
+    message: '请求错误！'
+  }
+
+  pool.getConnection(function (err, connection) {
+    if (err) {
+      console.log('数据库连接失败：', err)
+    } else {
+      connection.query(sql, function (err, result) {
+        if (err) {
+          console.log('数据获取失败，请稍后重试')
+          userError.status = '-200'
+          userError.message = 'get fail!'
+          res.end(JSON.stringify(userError))
+          connection.release()
+        } else {
+          if (result !== undefined && result != null && result !== '') {
+            console.log(result)
+            userError.status = '200'
+            userError.message = 'success'
+            userError.data = result
+            res.end(JSON.stringify(userError))
+            connection.release()
+          } else {
+            res.end(JSON.stringify(userError))
+            connection.release()
+          }
+        }
+      })
+    }
+  })
+})
+
 module.exports = router

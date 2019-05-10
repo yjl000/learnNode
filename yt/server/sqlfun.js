@@ -10,6 +10,9 @@ var sqlMap = {
   note: {
     add: 'INSERT INTO noteList (userID, title, label, content) VALUES (?, ?, ?, ?);',
     search: 'SELECT * FROM noteList WHERE userID = ?;'
+  },
+  blogList: {
+    get: 'SELECT * FROM bolgList;'
   }
 }
 

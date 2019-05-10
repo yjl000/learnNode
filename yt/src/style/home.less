@@ -1,4 +1,4 @@
-@windowWidth: 375;
+@windowWidth: 1400;
 @left: ~`Math.round(Math.random() * @{windowWidth})`;
 @animated: ~`(-Math.random() * 4 + 12).toFixed(2)`;
 @delay: ~`(-Math.random() * 8 + 0.2).toFixed(2)`;
@@ -8,7 +8,7 @@
 .flower{
   &_wrap{
     position: relative;
-    width: ~"@{windowWidth}px";
+    width: 100%;
     height: 100%;
     overflow: hidden;
     margin: 0 auto;
@@ -84,6 +84,37 @@
   align-items: center;
 }
 
+div.text{
+  position: absolute;
+  margin: auto;
+  width: 90%;
+  animation-delay: 1s;
+  animation-duration: 3s;
+  & > p{
+    font-size: 1.4rem;
+    color: #666;
+    &.last{
+      text-align: right;
+    }
+  }
+}
+div.text_2{
+  //animation-name: myOption;
+  animation-delay: 0.4s;
+  animation-duration: 2s;
+  //animation: myOption 2s 0.4s ;
+  position: absolute;
+  margin-top: -7.6rem;
+  & > p{
+    font-size: 1.6rem;
+    color: #666;
+  }
+}
+@keyframes myOption
+{
+  from {opacity:0;}
+  to {opacity:1;}
+}
 .slide1_img1{
   position: absolute;
   left: 10%;
