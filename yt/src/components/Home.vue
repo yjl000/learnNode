@@ -3,17 +3,17 @@
     <swiper :options="swiperOption" ref="mySwiper" class="swiper-box">
       <swiper-slide class="swiper-item">
         <div class="slide1">
-          <div class="slide1_img1 animated" :class="{fadeInLeft: inOne}">
+          <div class="slide1_img1 ani" swiper-animate-effect="fadeInLeft">
             <img src="../assets/home/slide1_1.jpg" alt="">
           </div>
-          <div class="slide1_img2 animated" :class="{fadeInRight: inOne}">
+          <div class="slide1_img2 ani" swiper-animate-effect="fadeInRight">
             <img src="../assets/home/slide1_2.jpg" alt="">
           </div>
-          <div class="slide1_img3 animated" :class="{flip: inOne}">
+          <div class="slide1_img3 ani" swiper-animate-effect="flip">
             <img src="../assets/home/slide1_3.jpg" alt="">
           </div>
         </div>
-        <div class="text animated" :class="{fadeIn: inOne}">
+        <div class="text ani" swiper-animate-effect="fadeIn">
           <p>樱花盛开的季节，四处洋溢着春天的气息，唯君与百花不可辜负！</p>
           <p class="last">——深圳湾公园游</p>
         </div>
@@ -24,12 +24,31 @@
       <swiper-slide class="swiper-item">
         <canvas id="love"></canvas>
         <div class="love"></div>
-        <div class="text_2 animated " :class="{bounceInDown: inTwo}">
+        <div class="text_2 ani" swiper-animate-effect="bounceInDown">
           <p>两情若是长久时，也须珍惜朝朝暮暮</p>
         </div>
       </swiper-slide>
-      <swiper-slide class="swiper-item">Slide 3</swiper-slide>
-      <swiper-slide class="swiper-item">Slide 4</swiper-slide>
+      <swiper-slide class="swiper-item">
+        <div class="slide2">
+          <div class="slide2_img1 ani" swiper-animate-effect="fadeInLeft">
+            <img src="../assets/home/three_1.jpg" alt="">
+          </div>
+          <div class="slide2_img2 ani" swiper-animate-effect="fadeInRight">
+            <img src="../assets/home/three_2.jpg" alt="">
+          </div>
+          <div class="slide2_img3 ani" swiper-animate-effect="flip">
+            <img src="../assets/home/three_3.jpg" alt="">
+          </div>
+        </div>
+        <div class="text_2 ani" swiper-animate-effect="bounceInUp">
+          <p style="color: orangered">生活不只有眼前的苟且，还有爱人和快乐！</p>
+        </div>
+      </swiper-slide>
+      <swiper-slide class="swiper-item">
+        <div class="four ani" swiper-animate-effect="zoomIn" swiper-animate-duration="2s">
+          <p>从校服到婚纱，从初中到现在！未来，我们还会牵手一起走下，直到白发斑斑，只愿执子之手与子偕老！</p>
+        </div>
+      </swiper-slide>
       <div class="swiper-pagination" slot="pagination"></div>
     </swiper>
   </div>
@@ -37,7 +56,7 @@
 
 <script>
 // @ is an alias to /src
-
+import * as swiperAni from '@/assets/swiper.animate.min.js'
 import { swiper, swiperSlide } from 'vue-awesome-swiper'
 import { ParticlePool, Point, canvasOption } from '../class'
 
@@ -45,8 +64,6 @@ export default {
   name: 'home',
   data () {
     return {
-      inOne: true,
-      inTwo: false,
       swiperOption: {
         direction: 'vertical',
         slidesPerView: 1,
@@ -54,6 +71,15 @@ export default {
         pagination: {
           el: '.swiper-pagination',
           clickable: true
+        },
+        on: {
+          init: function () {
+            swiperAni.swiperAnimateCache(this)
+            swiperAni.swiperAnimate(this)
+          },
+          slideChange: function () {
+            swiperAni.swiperAnimate(this)
+          }
         }
       },
       setting: {
@@ -76,17 +102,6 @@ export default {
     this.createPoint()
     let c = document.getElementById('love')
     this.createCanvas(c)
-    let that = this
-    this.swiper.on('slideChangeTransitionEnd', function (e) {
-      console.log(this.activeIndex)
-      if (this.activeIndex === 1) {
-        that.inTwo = true
-        that.inOne = false
-      } else if (this.activeIndex === 0) {
-        that.inTwo = false
-        that.inOne = true
-      }
-    })
   },
   methods: {
     updateAnimate () {
